@@ -1,5 +1,7 @@
 name: Plugin Publish
-on: [created]
+on:
+  release:
+    types: [created]
 jobs:
   Publish:
     name: Publish artifacts
